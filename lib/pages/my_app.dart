@@ -7,11 +7,11 @@ import './pins_page.dart';
 import './book_page.dart';
 import './repos_page.dart';
 import './activity_page.dart';
-import '../routers/routes.dart';
-import '../routers/application.dart';
+import '../routes/routes.dart';
+import '../routes/application.dart';
 import '../widgets/login-button.dart';
-import '../event/event-bus.dart';
-import '../event/event-model.dart';
+import '../events/event-bus.dart';
+import '../events/event-model.dart';
 
 class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
