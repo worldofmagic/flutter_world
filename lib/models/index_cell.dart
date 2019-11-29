@@ -1,5 +1,3 @@
-import '../utils//util.dart';
-
 class IndexCell {
   bool hot;
   String isCollection;
@@ -33,7 +31,7 @@ class IndexCell {
       commentCount: json['commentsCount'],
       tag: '$_tag${json['category']['name']}',
       username: json['user']['username'],
-      createdTime: Util.getTimeDuration(json['createdAt']),
+     //createdTime: Util.getTimeDuration(json['createdAt']),
       title: json['title'],
       detailUrl: json['originalUrl'],
       isCollection: json['type'] ,

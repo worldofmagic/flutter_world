@@ -1,4 +1,6 @@
   
+import 'package:travel_world/pages/my_app.dart';
+
 import './router_handler.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +16,7 @@ class Routes {
     router.notFoundHandler = new Handler(
         handlerFunc: (BuildContext context, Map<String, List<String>> params) {
       print("ROUTE WAS NOT FOUND !!!");
+      return MyApp();
     });
 
     router.define(articleDetail, handler: articleDetailHandler);

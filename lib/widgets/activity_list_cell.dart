@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../models/activity_cell.dart';
-import '../utils/util.dart';
 import './icon_with_text.dart';
 import '../routes/application.dart';
 
@@ -30,7 +29,7 @@ class ActivityListCell extends StatelessWidget {
           children: <Widget>[
             Image.network(
               cellData.pic,
-              width: Util.setPercentage(1.0, context),
+              //width: Util.setPercentage(1.0, context),
               height: 245,
               fit: BoxFit.cover,
             ),

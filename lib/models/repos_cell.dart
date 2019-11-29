@@ -1,5 +1,3 @@
-  
-import '../utils/util.dart';
 class ReposCell {
   String userName;
   String repoName;
@@ -22,14 +20,16 @@ class ReposCell {
 
   factory ReposCell.fromJson(Map<String, dynamic> json) {
     return ReposCell(
-      description: json['description'] == ''?'No description provided':json['description'],
-      userName:json['userName'],
-      fork:json['fork'],
-      stars:json['stars'],
-      repoName:json['repoName'],
-      language:json['language'],
-      url:json['url'],
-      time: Util.getTimeDuration(json['updatedAt'])
+      description: json['description'] == ''
+          ? 'No description provided'
+          : json['description'],
+      userName: json['userName'],
+      fork: json['fork'],
+      stars: json['stars'],
+      repoName: json['repoName'],
+      language: json['language'],
+      url: json['url'],
+      //  time: Util.getTimeDuration(json['updatedAt'])
     );
   }
 }

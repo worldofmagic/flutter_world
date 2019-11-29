@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../models/book_cell.dart';
-import '../utils/util.dart';
 import './in_text_dot.dart';
 import '../routes/application.dart';
 import 'dart:core';
@@ -21,8 +20,8 @@ class BookListCell extends StatelessWidget {
             "/web?url=${Uri.encodeComponent(url)}&title=${Uri.encodeComponent(cellData.title)}");
       },
       child: Container(
-        padding: EdgeInsets.symmetric(
-            horizontal: Util.setPercentage(0.03, context), vertical: 15.0),
+       // padding: EdgeInsets.symmetric(
+            //horizontal: Util.setPercentage(0.03, context), vertical: 15.0),
         decoration: BoxDecoration(
           color: Colors.white,
           border: Border(
@@ -36,19 +35,19 @@ class BookListCell extends StatelessWidget {
           children: <Widget>[
             Container(
               padding: EdgeInsets.only(
-                right: Util.setPercentage(0.03, context),
+               // right: Util.setPercentage(0.03, context),
               ),
               child: Image.network(
                 cellData.img,
-                width: Util.setPercentage(0.2, context),
+               // width: Util.setPercentage(0.2, context),
                 height: 100,
                 fit: BoxFit.contain,
               ),
             ),
             Container(
-              width: Util.setPercentage(0.5, context),
-              margin: EdgeInsets.only(
-                  right: Util.setPercentage(0.01, context)), //0.8
+              //width: Util.setPercentage(0.5, context),
+             // margin: EdgeInsets.only(
+                 // right: Util.setPercentage(0.01, context)), //0.8
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,

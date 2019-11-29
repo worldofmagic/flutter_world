@@ -1,4 +1,3 @@
-import '../utils/util.dart';
 class ActivityCell{
   String pic;
   String detailUrl;
@@ -20,7 +19,7 @@ class ActivityCell{
       detailUrl: json['eventUrl'],
       title:json['title'],
       pic:json['screenshot'],
-      time: Util.getTimeDate(json['startTime'])
+ //     time: Util.getTimeDate(json['startTime'])
     );
   }
 }

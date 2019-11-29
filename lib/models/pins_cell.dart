@@ -1,5 +1,3 @@
-import '../utils/util.dart';
-
 class PinsCell {
   Map<String, dynamic> user;
   String objectId;
@@ -23,7 +21,10 @@ class PinsCell {
       this.pictures,
       this.topic,
       this.uid,
-      this.user,this.url,this.urlPic,this.urlTitle});
+      this.user,
+      this.url,
+      this.urlPic,
+      this.urlTitle});
 
   factory PinsCell.fromJson(Map<String, dynamic> json) {
     Map<String, dynamic> user = new Map();
@@ -51,7 +52,7 @@ class PinsCell {
     return PinsCell(
         commentCount: json['commentCount'],
         content: json['content'],
-        createdAt: Util.getTimeDuration(json['createdAt']),
+        // createdAt: Util.getTimeDuration(json['createdAt']),
         likedCount: json['likedCount'],
         objectId: json['objectId'],
         pictures: pics,

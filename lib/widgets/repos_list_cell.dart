@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../models/repos_cell.dart';
-import '../utils/util.dart';
 import '../routes/application.dart';
 import 'dart:core';
 
@@ -37,7 +36,7 @@ class ReposListCell extends StatelessWidget {
             ),
             SizedBox(height: 10.0,),
             Container(
-              width: Util.setPercentage(0.8,context),
+    //          width: Util.setPercentage(0.8,context),
               child: Text(
                 cellData.description,
                 maxLines: 3,
@@ -53,7 +52,7 @@ class ReposListCell extends StatelessWidget {
                   width: 18.0,
                   margin: const EdgeInsets.only(right: 5.0),
                   decoration: BoxDecoration(
-                    color: Util.getLangColor(cellData.language),
+            //        color: Util.getLangColor(cellData.language),
                     borderRadius: BorderRadius.all(Radius.circular(18.0)),
                   ),
                 ),
